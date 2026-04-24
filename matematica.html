@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Matemática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Fotos/logo-port.png">
+</head>
+
+<body>
+
+    <header class="nav-bar">
+        <a href="index.html"><img class="logo" src="Fotos/logo-port.png" alt="Minha_Logo"></a>
+        <li class="topic">
+            <ul><a href="index.html">Início</a></ul>
+            <ul class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleMenu(event, 'dropdown-menu')">Ensino Médio<span
+                        class="drseta">▼</span></a>
+                <div class="dropdown-conteudo" id="dropdown-menu">
+                    <a href="linguagens.html">Linguagens</a>
+                    <a href="matematica.html">Matemática</a>
+                    <a href="natureza.html">Ciências da Natureza</a>
+                    <a href="humanas.html">Ciências Humanas</a>
+                </div>
+            </ul>
+            <ul class="dropdown">
+                <a href="#" class="dropbt" onclick="toggleMenu(event, 'dropdown-men')">Técnico<span
+                        class="drseta">▼</span></a>
+                <div class="dropdown-cont" id="dropdown-men">
+                    <a href="modelagem.html">Modelagem de Sistemas</a>
+                    <a href="iot.html">Internet das Coisas</a>
+                    <a href="banco.html">Banco de Dados</a>
+                </div>
+            </ul>
+            <ul><a href="atv_extra.html">Atividades Extra</a></ul>
+            <ul><a href="#Contatos">Contato</a></ul>
+        </li>
+    </header>
+
+    <div class="capa-materia">
+        <img src="Fotos/matematica.png" alt="Capa de Matemática" class="atividades">
+    </div>
+
+    <div class="abas-container">
+        <button class="aba-btn ativo" onclick="abrirTrimestre(event, 'trimestre1')">1º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre2')">2º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre3')">3º Trimestre</button>
+    </div>
+
+    <div id="trimestre1" class="aba-conteudo" style="display: block;">
+
+        <!-- <section class="materia-secao bg-claro"> -->
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Atividade do Filme: Quebrando a Banca</h2>
+
+                <div class="conteudo-lado-a-lado">
+                    <a href="https://docs.google.com/document/d/17W1ZSBjap8vJ8QDykCWuSs3b6yBYgeq0_e13M1aHCuM/edit?usp=sharing" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="analise-img" src="Fotos/quebrando-atv.png" alt="Foto da atividade no Docs">
+                    </a>
+
+                    <div class="atividade-conteudo">
+                        <div class="habilidades-descricao">
+                            <h4>Competências e Habilidades:</h4>
+                            <p><b>C5:</b> Aplicar o pensamento probabilístico para quantificar e fazer previsões em
+                                situações aplicadas a diferentes áreas do conhecimento e da vida cotidiana;
+                                <b>H31:</b> Reconhecer fenômenos e eventos (naturais, científicos, tecnológicos e/ou
+                                sociais) de caráter aleatório, compreendendo o significado e a importância da
+                                probabilidade como meio de prever resultados; <b>H32:</b> Identificar em
+                                diferentes áreas científicas e outras atividades práticas modelos e problemas que
+                                fazem uso de estatísticas e probabilidades.
+                            </p>
+
+                            <h4>Descrição:</h4>
+                            <p>Para realizar esta atividade começamos assistindo ao famoso filme "Quebrando a Banca"
+                                (2008), para entendermos sobre a aplicação da matemática na vida. Com isso, tivemos que
+                                realizar essa atividade escrita, como uma forma de interpretarmos o filme em diferentes
+                                visões, respondendo às perguntas propostas e escrevendo uma ideia de roteiro de filme de
+                                Hollywood que envolvesse matemática. Achei essa uma atividade muito interessante, pois
+                                acredito que questôes de interpretação nos ajudam a enxergar a obra de diferentes
+                                visões. A parte mais desafiadora na minha opinião foi produzir o estilo de roteiro, pois
+                                pensar em como aplicar a matemática num cenário fictício do entretenimento foi algo bem
+                                diferente, mas que trabalhou muito minha criatividade.</p>
+
+                            <a href="https://docs.google.com/document/d/17W1ZSBjap8vJ8QDykCWuSs3b6yBYgeq0_e13M1aHCuM/edit?usp=sharing"
+                                target="_blank" rel="noopener noreferrer" class="btn-card">Acessar atividade</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+    </div>
+
+    <div id="trimestre2" class="aba-conteudo">
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Em andamento...</h2>
+
+                <p style="text-align: center; color: #000000;">Atividades do 2º Trimestre estarão disponíveis em breve.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="trimestre3" class="aba-conteudo">
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Em andamento...</h2>
+
+                <p style="text-align: center; color: #000000;">Atividades do 3º Trimestre estarão disponíveis em breve.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="Contatos">
+        <h3>Contatos</h3>
+        <ul>
+            <li>m.eduardatezzari@gmail.com</li>
+            <li>(48) 98835-8833</li> <br>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maria-eduarda-tessari-6a8666365/" target="_blank"><img
+                        src="Fotos/LinkedIn.png" alt="LinkedIn"></a>
+
+                <a href="https://www.instagram.com/madutessari/" target="_blank"><img src="Fotos/Instagram.png"
+                        alt="Instagram"></a>
+
+                <a href="https://github.com/MariaTessari" target="_blank"><img src="Fotos/GitHub.png" alt="GitHub"></a>
+            </div>
+        </ul>
+        <p>&copy; 2026 Maria Eduarda Tessari. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

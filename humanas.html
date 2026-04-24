@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Humanas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Fotos/logo-port.png">
+</head>
+
+<body>
+
+    <header class="nav-bar">
+        <a href="index.html"><img class="logo" src="Fotos/logo-port.png" alt="Minha_Logo"></a>
+        <li class="topic">
+            <ul><a href="index.html">Início</a></ul>
+            <ul class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleMenu(event, 'dropdown-menu')">Ensino Médio<span
+                        class="drseta">▼</span></a>
+                <div class="dropdown-conteudo" id="dropdown-menu">
+                    <a href="linguagens.html">Linguagens</a>
+                    <a href="matematica.html">Matemática</a>
+                    <a href="natureza.html">Ciências da Natureza</a>
+                    <a href="humanas.html">Ciências Humanas</a>
+                </div>
+            </ul>
+            <ul class="dropdown">
+                <a href="#" class="dropbt" onclick="toggleMenu(event, 'dropdown-men')">Técnico<span
+                        class="drseta">▼</span></a>
+                <div class="dropdown-cont" id="dropdown-men">
+                    <a href="modelagem.html">Modelagem de Sistemas</a>
+                    <a href="iot.html">Internet das Coisas</a>
+                    <a href="banco.html">Banco de Dados</a>
+                </div>
+            </ul>
+            <ul><a href="atv_extra.html">Atividades Extra</a></ul>
+            <ul><a href="#Contatos">Contato</a></ul>
+        </li>
+    </header>
+
+    <div class="capa-materia">
+        <img src="Fotos/humanas.png" alt="Capa de Ciências Humanas" class="atividades">
+    </div>
+
+
+    <div class="abas-container">
+        <button class="aba-btn ativo" onclick="abrirTrimestre(event, 'trimestre1')">1º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre2')">2º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre3')">3º Trimestre</button>
+    </div>
+
+    <div id="trimestre1" class="aba-conteudo" style="display: block;">
+
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Geopolítica</h2>
+
+                <div class="conteudo-lado-a-lado">
+                    <div class="canva">
+                        <iframe loading="lazy"
+                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                            src="https://www.canva.com/design/DAHBMxg2PK8/kD4ZcsFvssbckzZm6y5u6A/view?embed"
+                            allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+
+                    <div class="atividade-conteudo">
+                        <div class="habilidades-descricao">
+                            <h4>Competências e Habilidades:</h4>
+                            <p><b>C1:</b> ACompreender processos históricos, sociais e geográficos nos diversos aspectos
+                                da vida em sociedade;
+                                <b>H1:</b> Reconhecer o processo de formação do indivíduo nos aspectos históricos,
+                                geográficos, sociais e filosóficos; <b>H2:</b> Compreender o processo de socialização do
+                                indivíduo, considerando os princípios do pensamento e da lógica; <b>H3:</b> Compreender
+                                as relações de poder entre os diversos grupos sociais;
+                                <b>H4:</b> Compreender mudanças e permanências ao longo do tempo na constituição da
+                                sociedade;<b>H5:</b> Analisar criticamente os aspectos políticos, econômicos e sociais
+                                relacionados à formação da sociedade no Brasil e no mundo.
+                            </p>
+
+                            <h4>Descrição:</h4>
+                            <p>Nessa atividade vários grupos apresentaram sobre diveros países, e o nosso grupo escolheu
+                                a Grécia para analisar e pesquisar vários dados e fatores essenciais, e a influência
+                                daquele país no mundo. Foi uma atividade muito interessante e legal de ser trabalhada
+                                pois foi possível entender o porquê da influência de tantos países, da mesma forma que
+                                conseguimos entender como e porquê certos países funcionam de certa forma. Foi uma ótima
+                                forma de aprendemos trabalhando a pesquisa e interpretação, paa procurar o máximo de
+                                dados confiáveis possíveis.</p>
+
+                            <a href="https://canva.link/zwqxobr3ihmq58v" target="_blank" rel="noopener noreferrer"
+                                class="btn-card">Acessar atividade</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Jornal da Grande Guerra</h2>
+
+                <div class="conteudo-lado-a-lado">
+                    <div class="canva-meme">
+                        <iframe loading="lazy"
+                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                            src="https://www.canva.com/design/DAHFt_6U3qw/baasB9ybzgcsMk2eOAjJMQ/view?embed"
+                            allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+
+                    </div>
+
+                    <div class="atividade-conteudo">
+                        <div class="habilidades-descricao">
+                            <h4>Competências e Habilidades:</h4>
+                            <p><b>C3;</b>
+                                <b>H15:</b> Reconhecer os movimentos sociais e sua representação da coletividade como
+                                elemento de transformação da realidade social, política, econômica e cultural;
+                                <b>H16:</b> Compreender a relação entre ciência, tecnologia e sociedade e os efeitos
+                                dessa relação no contexto social, político e econômico;
+                                <b>H20:</b> Implementar ações de proteção ou recuperação ambiental com base em
+                                princípios, leis e iniciativas de desenvolvimento sustentável;<b>C6;</b>
+                                <b>H39:</b> Relacionar o papel das instituições sociais às soluções para problemas
+                                políticos, econômicos, sociais e ambientais no contexto da sociedade brasileira.
+                            </p>
+
+                            <h4>Descrição:</h4>
+                            <p>O objetivo desta atividade era produzir um jornal no estilo dos jornais que circulavam
+                                durante o período da 1ª Guerra Mundial (Grande Guerra) de algum país que tenha
+                                participado. Escolhemos fazer um jornal na época em que a Itália entrou na Grande Guerra
+                                quebrando sua neutralidade. Foi uma atividade muito legal de se trabalhar pois tivemos
+                                que analisar vários jornais diferentes, analisar a linguagem mais utilizada na época e
+                                tudo que estava acontecendo naquela data para que pudéssemos utilizar as informações e
+                                utilizá-las no jornal para deixá-lo o mais fiel possível. Foi muito interessante ver com
+                                mais detalhes certos lados e posicionamentos de países da Grande Guerra.</p>
+
+                            <a href="https://canva.link/yd9u7eio60x2acw" target="_blank" rel="noopener noreferrer"
+                                class="btn-card">Acessar atividade</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="trimestre2" class="aba-conteudo">
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Em andamento...</h2>
+
+                <p style="text-align: center; color: #000000;">Atividades do 2º Trimestre estarão disponíveis em breve.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="trimestre3" class="aba-conteudo">
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Em andamento...</h2>
+
+                <p style="text-align: center; color: #000000;">Atividades do 3º Trimestre estarão disponíveis em breve.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="Contatos">
+        <h3>Contatos</h3>
+        <ul>
+            <li>m.eduardatezzari@gmail.com</li>
+            <li>(48) 98835-8833</li> <br>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maria-eduarda-tessari-6a8666365/" target="_blank"><img
+                        src="Fotos/LinkedIn.png" alt="LinkedIn"></a>
+
+                <a href="https://www.instagram.com/madutessari/" target="_blank"><img src="Fotos/Instagram.png"
+                        alt="Instagram"></a>
+
+                <a href="https://github.com/MariaTessari" target="_blank"><img src="Fotos/GitHub.png" alt="GitHub"></a>
+            </div>
+        </ul>
+        <p>&copy; 2026 Maria Eduarda Tessari. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

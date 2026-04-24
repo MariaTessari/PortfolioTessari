@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Fotos/logo-port.png">
+    <title>Portfólio - Maria Tessari</title>
+
+
+</head>
+
+<body>
+    <header class="nav-bar">
+        <a href="index.html"><img class="logo" src="Fotos/logo-port.png" alt="Minha_Logo"></a>
+        <li class="topic">
+            <ul><a href="#">Início</a></ul>
+            <ul class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleMenu(event, 'dropdown-menu')">Ensino Médio<span
+                        class="drseta">▼</span></a>
+                <div class="dropdown-conteudo" id="dropdown-menu">
+                    <a href="linguagens.html">Linguagens</a>
+                    <a href="matematica.html">Matemática</a>
+                    <a href="natureza.html">Ciências da Natureza</a>
+                    <a href="humanas.html">Ciências Humanas</a>
+                </div>
+            </ul>
+            <ul class="dropdown">
+                <a href="#" class="dropbt" onclick="toggleMenu(event, 'dropdown-men')">Técnico<span
+                        class="drseta">▼</span></a>
+                <div class="dropdown-cont" id="dropdown-men">
+                    <a href="modelagem.html">Modelagem de Sistemas</a>
+                    <a href="iot.html">Internet das Coisas</a>
+                    <a href="banco.html">Banco de Dados</a>
+                </div>
+            </ul>
+            <ul><a href="atv_extra.html">Atividades Extra</a></ul>
+            <ul><a href="#Contatos">Contato</a></ul>
+        </li>
+    </header>
+
+    <img src="Fotos/capa-port1.png" alt="Capa do Portfólio" class="capa">
+
+    <div class="botao-inicio">
+        <a class="botao-in" href="#SobreMim" rel="noopener">Sobre Mim</a>
+        <a class="botao-in" href="#Curriculo" rel="noopener">Currículo</a>
+        <a class="botao-in" href="#Portfolio" rel="noopener">Portfólios</a>
+    </div>
+
+    <section class="capa">
+
+        <section class="Sobre Mim" id="SobreMim">
+            <section id="inicio">
+                <div class="layout-sobre-mim">
+                    <div class="sobre-caixa-texto">
+                        <h2>Sobre mim</h2>
+                        <p>Me chamo Maria Eduarda, nascida em 13/04/2008, natural de Florianópolis, e sou uma jovem
+                            comunicadora.
+                            Atuo como
+                            influenciadora literária no Instagram, onde desenvolvo parcerias com grandes editoras como
+                            Companhia
+                            das Letras, Arqueiro e Rocco. Sou estudante do Ensino Médio Integrado
+                            ao Desenvolvimento de Sistemas na Escola SESI, integrante e lider da Iniciação Científica de
+                            Matemática.
+
+                            Também adoro arte e sou bailarina clássica há 11 anos e, hoje, atuo como
+                            professora de ballet para crianças. Além disso, sou multi-instrumentista e apaixonada por
+                            música.
+                            Sou uma pessoa proativa, que valoriza o tempo de qualidade com a família e amigos, e busco
+                            constantemente aprender novos fatos curiosos.</p>
+
+                        <h2>Objetivos</h2>
+                        <p>Meu foco principal é concluir o ensino técnico e ingressar na faculdade de Medicina, com o
+                            objetivo de
+                            seguir
+                            carreira na Psiquiatria Forense. Pretendo continuar com a
+                            produção de conteúdo literário e as aulas de ballet, mantendo sempre o lado criativo. Desde
+                            cedo, busco
+                            minha independência financeira através de esforço e da organização. Meu propósito é
+                            construir uma carreira sólida que me permita autonomia, enquanto continuo ajudando as
+                            pessoas e
+                            compartilhando meu conhecimento.
+                    </div>
+                    <div class="caixa-imagem">
+                        <img src="Fotos/perfil.png" alt="Foto de perfil" class="perfil">
+                    </div>
+                </div>
+                <br> <br> <br>
+                <hr>
+                <div class="amigos-familia">
+
+                    <div class="sobre-caixa-texto">
+                        <h2>Família e Amigos</h2>
+                        <p>Família e amigos são uma das coisas mais importantes para mim. Sinto que a família é como um
+                            alicerce que me ajuda a evoluir. A família, para mim, é um lugar de conforto e segurança,
+                            com
+                            pessoas que me ajudam e que eu posso confiar. E amigos são como uma família, a amizade,
+                            quando
+                            verdadeira, é linda. Uma das coisas que mais gosto de fazer é passar tempo de qualidade com
+                            pessoas que gosto e que são importantes pra mim, como meus amigos e família.
+                            "Aqueles que nos amam nunca nos deixam realmente. Pode sempre encontrá-los, aqui (coração)."
+                            -
+                            Harry Potter</p>
+
+                        <img class="familia-img" src="Fotos/dicionario.png" alt="Família">
+                    </div>
+
+                    <div id="carrossel">
+                        <button id="btn-esq" class="seta seta-esq" onclick="mudarSlide(-1)">&#10094;</button>
+
+                        <div class="carrossel-slides">
+                            <img src="Fotos/foto1.jpg" alt="Foto 1" class="slide">
+                            <img src="Fotos/foto2.jpg" alt="Foto 2" class="slide">
+                            <img src="Fotos/foto3.PNG" alt="Foto 3" class="slide">
+                            <img src="Fotos/foto4.PNG" alt="Foto 4" class="slide">
+                            <img src="Fotos/foto5.PNG" alt="Foto 4" class="slide">
+                            <img src="Fotos/foto6.jpg" alt="Foto 4" class="slide">
+                            <img src="Fotos/foto8.jpg" alt="Foto 8" class="slide">
+                            <img src="Fotos/foto9.jpg" alt="Foto 9" class="slide">
+                            <img src="Fotos/foto10.jpg" alt="Foto 10" class="slide">
+                            <img src="Fotos/foto11.PNG" alt="Foto 11" class="slide">
+                            <img src="Fotos/foto12.jpg" alt="Foto 12" class="slide">
+                            <img src="Fotos/foto13.jpg" alt="Foto 13" class="slide">
+                            <img src="Fotos/foto14.jpg" alt="Foto 14" class="slide">
+
+                        </div>
+
+                        <button id="btn-dir" class="seta seta-dir" onclick="mudarSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+                <hr>
+                <br> <br> 
+
+
+            </section>
+
+
+
+
+            <section class="Curriculo" id="Curriculo">
+                <h2>Currículo</h2>
+                <div class="container-cv">
+                    <iframe class="info"
+                        src="https://docs.google.com/document/d/e/2PACX-1vRkquvEXvuY4ncvsypr4Lvc37lcYrbfX9m-KmHPgU5ETcuafBgwQVrhS0Y3v9w3osdLNHokBY2p7lct/pub?embedded=true"></iframe>
+                </div>
+                <div class="botao-curriculo">
+                    <a class="botao-link"
+                        href="https://docs.google.com/document/d/e/2PACX-1vRkquvEXvuY4ncvsypr4Lvc37lcYrbfX9m-KmHPgU5ETcuafBgwQVrhS0Y3v9w3osdLNHokBY2p7lct/pub"
+                        target="_blank" rel="noopener">Ver Currículo Completo</a>
+                </div>
+            </section>
+
+            <section class="Port" id="Portfolio">
+                <div class="secao">
+                    <h2>Portfólio Primeiro Ano</h2>
+                    <div class="container-primeiro-ano">
+                        <iframe loading="lazy"
+                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                            src="https://www.canva.com/design/DAF-Ko-mhRY/PXk0BYshBOprbLPUZ9Silw/view?embed"
+                            allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+                    <p>Acima temos o meu portfólio do 1º ano (2024), que foi feito pelo Canva Sites.</p>
+                    <a class="botao-link"
+                        href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF-Ko-mhRY&#x2F;PXk0BYshBOprbLPUZ9Silw&#x2F;view?utm_content=DAF-Ko-mhRY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                        target="_blank" rel="noopener">Portfólio - 1º Ano</a>
+
+                </div>
+
+                <div class="secao">
+                    <h2>Portfólio Segundo Ano</h2>
+                    <a
+                        href="https://sites.google.com/estudante.sesisenai.org.br/portfolio-mariaeduardatessari/in%C3%ADcio"><img
+                            class="segundo-ano" src="Fotos/portfolio-2ano.png" alt="Portfólio do Segundo Ano"></a>
+                    <p>Aqui temos o portfólio do 2º ano (2025), que foi feito pelo Google Sites, para
+                        utilizarmos uma ferramenta mais profissional</p>
+                    <a class="botao-link"
+                        href="https://sites.google.com/estudante.sesisenai.org.br/portfolio-mariaeduardatessari/in%C3%ADcio"
+                        target="_blank" rel="noopener">Portfólio - 2º Ano</a>
+                </div>
+            </section>
+
+            <div class="topo">
+                <a class="botao-link" href="#">Voltar ao Topo</a>
+            </div>
+        </section>
+    </section>
+
+
+    <footer id="Contatos">
+        <h3>Contatos</h3>
+        <ul>
+            <li>m.eduardatezzari@gmail.com</li>
+            <li>(48) 98835-8833</li> <br>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maria-eduarda-tessari-6a8666365/" target="_blank"><img
+                        src="Fotos/LinkedIn.png" alt="LinkedIn"></a>
+
+                <a href="https://www.instagram.com/madutessari/" target="_blank"><img src="Fotos/Instagram.png"
+                        alt="Instagram"></a>
+
+                <a href="https://github.com/MariaTessari" target="_blank"><img src="Fotos/GitHub.png" alt="GitHub"></a>
+            </div>
+        </ul>
+        <p>&copy; 2026 Maria Eduarda Tessari. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
