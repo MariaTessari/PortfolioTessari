@@ -87,6 +87,7 @@ section {
 
 h2 {
     border-bottom: 2px solid #ddd;
+    color: #3e0f5f;
     padding-bottom: 5px;
     max-width: fit-content;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -136,6 +137,17 @@ h2 {
     gap: 30px;
     margin-top: 20px;
     max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.grid-atividades-prix {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 1170px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -474,6 +486,30 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 
+.canva-3 {
+    width: 100%;
+    max-width: 820px;
+    margin: 20px auto;
+    /* aspect-ratio e overflow removidos para que a div cresça com o conteúdo */
+    border-radius: 8px;
+    background-color: transparent; /* Alterado de preto para transparente */
+    will-change: transform;
+    margin-bottom: 0.9em;
+    margin-top: 1.6em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Aumentei o gap um pouco para separar melhor os vídeos */
+}
+
+/* Nova regra para controlar o tamanho dos vídeos/canva de forma responsiva */
+.canva-3 iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantém a proporção de vídeo em todas as telas */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+}
+
 .container-primeiro-ano:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
@@ -705,6 +741,14 @@ footer ul li a:hover {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+    cursor: pointer;
+}
+
+#carrossel:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
 }
 
 
@@ -759,6 +803,8 @@ object-fit: cover;
    8. Pagina Atividades Extra
    ========================================================================== */
 
+/* --- SEU CSS ORIGINAL --- */
+/* --- SEU CSS ORIGINAL --- */
 .certificados {
     display: block;
     width: 100%;
@@ -772,7 +818,6 @@ object-fit: cover;
     cursor: pointer;
 }
 
-
 .certificados:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
@@ -780,7 +825,6 @@ object-fit: cover;
 
 .texto-certificado p {
     text-align: justify;
-    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
     max-width: 620px;
@@ -791,4 +835,35 @@ object-fit: cover;
 .container-extra {
     display: flex;
     gap: 100px;
+    justify-content: center;
 }
+
+/* --- NOVO CSS PARA O LAYOUT (CARROSSEL ISOLADO) --- */
+.conteudo-lado-a-lado-extra {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between;
+    gap: 50px; /* Espaço entre os dois lados */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores (celular) */
+    width: 100%;
+}
+
+/* Agrupa o texto e o certificado de um lado */
+.texto-e-certificado {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Isola o carrossel do outro lado */
+.apenas-carrossel {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajuste para o carrossel não quebrar o layout */
