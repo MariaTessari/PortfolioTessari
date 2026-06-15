@@ -15,7 +15,8 @@
         <li class="topic">
             <ul><a href="index.html">Início</a></ul>
             <ul class="dropdown">
-                <a href="#" class="dropbtn" onclick="toggleMenu(event, 'dropdown-menu')">Ensino Médio<span class="drseta">▼</span></a>
+                <a href="#" class="dropbtn" onclick="toggleMenu(event, 'dropdown-menu')">Ensino Médio<span
+                        class="drseta">▼</span></a>
                 <div class="dropdown-conteudo" id="dropdown-menu">
                     <a href="linguagens.html">Linguagens</a>
                     <a href="matematica.html">Matemática</a>
@@ -24,7 +25,8 @@
                 </div>
             </ul>
             <ul class="dropdown">
-                <a href="#" class="dropbt" onclick="toggleMenu(event, 'dropdown-men')">Técnico<span class="drseta">▼</span></a>
+                <a href="#" class="dropbt" onclick="toggleMenu(event, 'dropdown-men')">Técnico<span
+                        class="drseta">▼</span></a>
                 <div class="dropdown-cont" id="dropdown-men">
                     <a href="modelagem.html">Modelagem de Sistemas</a>
                     <a href="iot.html">Internet das Coisas</a>
@@ -40,54 +42,131 @@
         <img src="Fotos/iot.png" alt="Capa de Internet das Coisas" class="atividades">
     </div>
 
-    <div class="grid-atividades-prix">
-        <div class="atividade-card">
-            <h2>Grand Prix SENAI - Protótipo X</h2>
+    <div class="abas-container">
+        <button class="aba-btn ativo" onclick="abrirTrimestre(event, 'trimestre1')">1º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre2')">2º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre3')">3º Trimestre</button>
+    </div>
 
-            <div class="conteudo-lado-a-lado">
-                <div class="canva-3">
-                    <iframe src="https://www.youtube.com/embed/ZBz01WPrAFA?si=zYvcD9Uej3jebxMD"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-                    <iframe src="https://www.youtube.com/embed/tOYvwRBphLE?si=u0RNPynCE_hMdCKS"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-                    <iframe loading="lazy" src="https://www.canva.com/design/DAHHA6lblp8/5hSrjqBQZxM0jirGivNNSw/view?embed"
-                        allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-                </div>
+    <div id="trimestre1" class="aba-conteudo" style="display: block;">
 
-                <div class="atividade-conteudo">
-                    <div class="habilidades-descricao">
-                        <h4>Competências e Habilidades:</h4>
-                        <p><b>Não informadas.</b></p>
+        <!-- <section class="materia-secao bg-claro"> -->
+        <div class="grid-atividades-prix">
+            <div class="atividade-card">
+                <h2>Grand Prix SENAI - Protótipo X</h2>
 
-                        <h4>Descrição:</h4>
-                        <p>O Grand Prix ocorreu do dia 13/04 ao dia 22/04 (inicialmente até dia 17, porém as entregas
-                            foram prorrogadas), onde cada grupo ficava com um tema e um desafio daquela tema de
-                            determinada empresa. Nós ficamos com o tema de descarbonização e a empresa Petrobras, onde o
-                            desafio era criar uma solução para minimizar a emissão de carbono em empresas de óleo e gás.
-                            Para isso, decidimos criar um sistema de filtro do carbono nas chaminés das empresas e um
-                            sistema de produção de ecoblocos com os resíduos. Foi uma semana muito produtiva e
-                            interessante, pois pensar em como desenvolver uma solução para um problema que impacta e
-                            afeta tanto o mundo e a população nos dias atuais torna tudo ainda mais desafiador, mas
-                            tentamos pensar em algo acessível e realista. Depois, como pedido, produzimos o PITCH do
-                            nosso projeto, o vídeo de protótipo (que envolvia tanto um site de monitoramento quando o
-                            filtro e o ecobloco em si) e também o lean canvas com detalhes da solução elaborada. Foi uma
-                            grande experiência envolvendo trabalho em equipe e visão de futuro, que com certeza vai
-                            ajudar no futuro no mercado de trabalho, assim como já está ajudando no presente. Pensar
-                            em uma solução para um problema tão complexo e atual, e desenvolver um protótipo para isso
-                            foi um grande desafio, mas também muito gratificante. O desenvolvimento do site também foi
-                            algo que gostamos bastante, e que nos fez aprender mais sobre HTML, CSS e JavaScript, além de nos ajudar a
-                            pensar em como criar uma interface amigável e funcional para o usuário.</p>
+                <div class="conteudo-lado-a-lado">
+                    <div class="canva-3">
+                        <iframe src="https://www.youtube.com/embed/ZBz01WPrAFA?si=zYvcD9Uej3jebxMD"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                        <a href="https://canva.link/j43u4yjjfd2ya58" target="_blank" rel="noopener noreferrer"
-                            class="btn-card">Acessar lean canvas</a>
+                        <iframe src="https://www.youtube.com/embed/tOYvwRBphLE?si=u0RNPynCE_hMdCKS"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <iframe loading="lazy"
+                            src="https://www.canva.com/design/DAHHA6lblp8/5hSrjqBQZxM0jirGivNNSw/view?embed"
+                            allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+                    </div>
+
+                    <div class="atividade-conteudo">
+                        <div class="habilidades-descricao">
+                            <h4>Competências e Habilidades:</h4>
+                            <p><b>Não informadas.</b></p>
+
+                            <h4>Descrição:</h4>
+                            <p>O Grand Prix ocorreu do dia 13/04 ao dia 22/04 (inicialmente até dia 17, porém as
+                                entregas
+                                foram prorrogadas), onde cada grupo ficava com um tema e um desafio daquela tema de
+                                determinada empresa. Nós ficamos com o tema de descarbonização e a empresa Petrobras,
+                                onde o
+                                desafio era criar uma solução para minimizar a emissão de carbono em empresas de óleo e
+                                gás.
+                                Para isso, decidimos criar um sistema de filtro do carbono nas chaminés das empresas e
+                                um
+                                sistema de produção de ecoblocos com os resíduos. Foi uma semana muito produtiva e
+                                interessante, pois pensar em como desenvolver uma solução para um problema que impacta e
+                                afeta tanto o mundo e a população nos dias atuais torna tudo ainda mais desafiador, mas
+                                tentamos pensar em algo acessível e realista. Depois, como pedido, produzimos o PITCH do
+                                nosso projeto, o vídeo de protótipo (que envolvia tanto um site de monitoramento quando
+                                o
+                                filtro e o ecobloco em si) e também o lean canvas com detalhes da solução elaborada. Foi
+                                uma
+                                grande experiência envolvendo trabalho em equipe e visão de futuro, que com certeza vai
+                                ajudar no futuro no mercado de trabalho, assim como já está ajudando no presente. Pensar
+                                em uma solução para um problema tão complexo e atual, e desenvolver um protótipo para
+                                isso
+                                foi um grande desafio, mas também muito gratificante. O desenvolvimento do site também
+                                foi
+                                algo que gostamos bastante, e que nos fez aprender mais sobre HTML, CSS e JavaScript,
+                                além
+                                de nos ajudar a
+                                pensar em como criar uma interface amigável e funcional para o usuário.</p>
+
+                            <a href="https://canva.link/j43u4yjjfd2ya58" target="_blank" rel="noopener noreferrer"
+                                class="btn-card">Acessar lean canvas</a>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+
+        <!-- </section> -->
+    </div>
+    <div id="trimestre2" class="aba-conteudo">
+        <div class="grid-atividades-prix">
+            <div class="atividade-card">
+                <h2>Atividade Prática - Semáforo, Arduíno e Tinkercad</h2>
+
+                <div class="conteudo-lado-a-lado">
+                    
+                        <img class="analise-img" src="Fotos/led-iot1.png" alt="Foto da atividade no Docs">
+                        
+                    </a>
+
+                    <div class="atividade-conteudo">
+                        <div class="habilidades-descricao">
+                            <h4>Competências e Habilidades:</h4>
+                            <p><b>Competência: </b>Propiciar o desenvolvimento de capacidades técnicas e socioemocionais
+                                relativas às
+                                atividades do técnico em desenvolvimento de sistemas impactadas pela tecnologia da
+                                internet das coisas. <b>Habilidades: </b> Reconhecer especificações técnicas e
+                                paradigmas
+                                do conceito de internet das coisas;
+                                2. Integrar dispositivos para coleta automática de dados em sistemas industriais;
+                                3. Integrar dispositivos de comunicação de dados;
+                                4. Reconhecer especificações técnicas de sensoriamento e parametrização de robôs.</p>
+
+                            <h4>Descrição:</h4>
+                            <p>Para esta atividade, primeiro montamos o protótipo na plataforma do Tinkercad, desta
+                                forma conseguimos visualizar onde cada item se encaixava e simular seu funcionamento. Na
+                                prática do led piscando e do semáforo ainda aproveitamos para programar para que ele
+                                apagasse e acendesse através da linguagem C++. Após fazermos a simulação e programarmos,
+                                utilizamos o Arduíno no computador para que ele se conectasse com o hardware e dessa
+                                forma o led funcionasse. A experiência foi marailhosa e enriquecedor. Esse primeiro
+                                contato com C++ foi uma mudança de chaves e algo inovador, pois nunca havia programado
+                                antes e tive uma ótima experiência. Além de que, ver a programação ganhando vida no
+                                físico, foi ótimo para entender melhor o funcionamento das coisas.
+
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="trimestre3" class="aba-conteudo">
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Em andamento...</h2>
+
+                <p style="text-align: center; color: #000000;">Atividades do 3º Trimestre estarão disponíveis em breve.
+                </p>
             </div>
         </div>
     </div>
@@ -98,8 +177,12 @@
             <li>m.eduardatezzari@gmail.com</li>
             <li>(48) 98835-8833</li> <br>
             <div class="icon">
-                <a href="https://www.linkedin.com/in/maria-eduarda-tessari-6a8666365/" target="_blank"><img src="Fotos/LinkedIn.png" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/madutessari/" target="_blank"><img src="Fotos/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/maria-eduarda-tessari-6a8666365/" target="_blank"><img
+                        src="Fotos/LinkedIn.png" alt="LinkedIn"></a>
+
+                <a href="https://www.instagram.com/madutessari/" target="_blank"><img src="Fotos/Instagram.png"
+                        alt="Instagram"></a>
+
                 <a href="https://github.com/MariaTessari" target="_blank"><img src="Fotos/GitHub.png" alt="GitHub"></a>
             </div>
         </ul>
@@ -107,5 +190,7 @@
     </footer>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
