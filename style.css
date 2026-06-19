@@ -704,7 +704,7 @@ footer ul li a:hover {
 }
 
 /* Carrossel original geral */
-#carrossel {
+.carrossel-container {
     position: relative;
     height: 500px;
     width: 450px;
@@ -716,6 +716,11 @@ footer ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
     cursor: pointer;
+}
+
+.carrossel-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
 }
 
 #carrossel:hover {
@@ -760,6 +765,49 @@ footer ul li a:hover {
 
 .seta-dir {
     right: 10px;
+}
+
+/* ==========================================================================
+   7. Pagina IoT - 2º Trimestre
+   ========================================================================== */
+
+/* Coluna da esquerda com mídias empilhadas */
+.media-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 820px;
+    margin-top: 30px;
+}
+
+/* Imagens do Tinkercad empilhadas abaixo do carrossel */
+.tinker-img {
+    width: 100%;
+    max-width: 820px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.tinker-img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
+}
+
+/* Ajuste do carrossel dentro da coluna de mídia do IoT */
+.media-coluna .carrossel-container {
+    width: 100%;
+    max-width: 820px;
+    height: 400px;
+    margin: 0;
+}
+
+.media-coluna .slide {
+    height: 400px;
 }
 
 /* ==========================================================================
@@ -832,7 +880,7 @@ footer ul li a:hover {
 }
 
 /* Redução do tamanho do carrossel na página extra sem quebrar o script */
-.media-bloco #carrossel {
+.media-bloco .carrossel-container {
     height: 420px; /* Diminuído um pouco conforme solicitado */
     width: 380px;  /* Diminuído um pouco conforme solicitado */
     margin: 0 auto;

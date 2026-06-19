@@ -1,53 +1,93 @@
-// carrossel
+// ==========================================================================
+// CARROSSÉIS (suporte a múltiplos carrosséis na mesma página)
+// ==========================================================================
 
-// Variável para guardar qual foto está aparecendo no momento
-document.addEventListener('DOMContentLoaded', () => {
-    let indiceAtual = 0;
-    
-    // Captura os elementos do HTML
-    const carrosselContainer = document.getElementById('carrossel');
-    const slidesContainer = document.querySelector('.carrossel-slides');
-    const slides = document.querySelectorAll('.slide');
-    const btnEsq = document.getElementById('btn-esq');
-    const btnDir = document.getElementById('btn-dir');
+// Função de compatibilidade para o carrossel antigo (index.html)
+// Mantida para não quebrar páginas que usam onclick="mudarSlide()"
+function mudarSlide(direcao) {
+    const carrosselAntigo = document.getElementById('carrossel');
+    if (!carrosselAntigo) return;
+
+    const slidesContainer = carrosselAntigo.querySelector('.carrossel-slides');
+    const slides = carrosselAntigo.querySelectorAll('.slide');
+    if (!slidesContainer || slides.length === 0) return;
+
+    const totalSlides = slides.length;
+    let indiceAtual = parseInt(carrosselAntigo.dataset.indice || '0');
+
+    indiceAtual += direcao;
+    if (indiceAtual >= totalSlides) indiceAtual = 0;
+    if (indiceAtual < 0) indiceAtual = totalSlides - 1;
+
+    carrosselAntigo.dataset.indice = indiceAtual;
+    const larguraSlide = carrosselAntigo.offsetWidth;
+    slidesContainer.style.transform = `translateX(${-(indiceAtual * larguraSlide)}px)`;
+}
+
+function iniciarCarrossel(containerId) {
+    const carrosselContainer = document.getElementById(containerId);
+    if (!carrosselContainer) return;
+
+    const slidesContainer = carrosselContainer.querySelector('.carrossel-slides');
+    const slides = carrosselContainer.querySelectorAll('.slide');
+    const btnEsq = carrosselContainer.querySelector('.seta-esq');
+    const btnDir = carrosselContainer.querySelector('.seta-dir');
     const totalSlides = slides.length;
 
-   // Função que faz o movimento dinâmico baseado no tamanho renderizado em tela
+    if (totalSlides === 0) return;
+
+    let indiceAtual = 0;
+
     function atualizarCarrossel() {
         if (!slidesContainer || !carrosselContainer) return;
-        // Captura a largura real do container do carrossel para passar os slides perfeitamente
-        const larguraSlide = carrosselContainer.offsetWidth; 
-        const deslocamento = -(indiceAtual * larguraSlide); 
-        slidesContainer.style.transform = `translateX(${deslocamento}px)`; 
+        const larguraSlide = carrosselContainer.offsetWidth;
+        const deslocamento = -(indiceAtual * larguraSlide);
+        slidesContainer.style.transform = `translateX(${deslocamento}px)`;
     }
 
-    // Ação ao clicar no botão da direita
     if (btnDir) {
         btnDir.addEventListener('click', () => {
             indiceAtual++;
             if (indiceAtual >= totalSlides) {
-                indiceAtual = 0; // Volta para a primeira
+                indiceAtual = 0;
             }
             atualizarCarrossel();
         });
     }
 
-    // Ação ao clicar no botão da esquerda
     if (btnEsq) {
         btnEsq.addEventListener('click', () => {
             indiceAtual--;
             if (indiceAtual < 0) {
-                indiceAtual = totalSlides - 1; // Vai para a última
+                indiceAtual = totalSlides - 1;
             }
             atualizarCarrossel();
         });
     }
 
-    // Recalcula o tamanho se a janela mudar para não quebrar a responsividade
     window.addEventListener('resize', atualizarCarrossel);
+}
+
+// Inicializa todos os carrosséis da página ao carregar o DOM
+document.addEventListener('DOMContentLoaded', () => {
+    // Inicializa carrosséis com a classe .carrossel-container (IoT, atv_extra)
+    const carrosseis = document.querySelectorAll('.carrossel-container');
+    carrosseis.forEach(function(container) {
+        iniciarCarrossel(container.id);
+    });
+
+    // Inicializa o carrossel antigo do index.html (id="carrossel")
+    const carrosselAntigo = document.getElementById('carrossel');
+    if (carrosselAntigo) {
+        // Adiciona a classe .carrossel-container para aproveitar os estilos
+        carrosselAntigo.classList.add('carrossel-container');
+        iniciarCarrossel('carrossel');
+    }
 });
 
-// --- DROPDOWN UNIFICADO ---
+// ==========================================================================
+// DROPDOWN UNIFICADO
+// ==========================================================================
 
 /* Função inteligente que recebe o evento e o ID do menu a ser aberto */
 function toggleMenu(event, idDoMenu) {
@@ -79,6 +119,10 @@ window.onclick = function (event) {
         });
     }
 }
+
+// ==========================================================================
+// ABAS DE TRIMESTRE
+// ==========================================================================
 
 function abrirTrimestre(evento, idTrimestre) {
     // 1. Esconde todos os conteúdos de trimestre
