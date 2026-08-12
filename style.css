@@ -172,10 +172,29 @@ h2 {
     border-radius: 10px;
     will-change: transform;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .analise-img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
+}
+
+.red-img {
+    width: fit-content;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    will-change: transform;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.red-img:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
 }
