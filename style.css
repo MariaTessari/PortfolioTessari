@@ -902,6 +902,7 @@ footer ul li a:hover {
     margin: 0;
     line-height: 1.6;
     color: #000000;
+    font-weight: normal; /* Evita que uma <b> esquecida deixe o bloco inteiro em negrito */
 }
 
 .media-bloco {
