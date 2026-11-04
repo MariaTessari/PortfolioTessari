@@ -499,6 +499,23 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 
+.canva-meme-info {
+    width: 100%;
+    max-width: 520px;
+    height: 720px;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+    background-color: #000000;
+    will-change: transform;
+    margin-bottom: 0.9em;
+    margin-top: 1.6em;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
 .canva-3 {
     width: 100%;
     max-width: 820px;
