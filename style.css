@@ -553,6 +553,11 @@ img {
     box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
 }
 
+.canva-meme-info:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
+}
+
 .canva-3:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
