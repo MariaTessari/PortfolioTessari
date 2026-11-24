@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Sistemas</title>
+    <title>Desenvolvimento de Sistemas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Fotos/logo-port.png">
 </head>
+
 <body>
+
     <header class="nav-bar">
         <a href="index.html"><img class="logo" src="Fotos/logo-port.png" alt="Minha_Logo"></a>
         <li class="topic">
@@ -39,5 +41,96 @@
             <ul><a href="#Contatos">Contato</a></ul>
         </li>
     </header>
+
+    <div class="capa-materia">
+        <img src="Capas/teste.png" alt="Capa de Teste de Sistemas" class="atividades">
+    </div>
+
+    <div class="abas-container">
+        <button class="aba-btn ativo" onclick="abrirTrimestre(event, 'trimestre2')">2º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre3')">3º Trimestre</button>
+    </div>
+
+    <div id="trimestre2" class="aba-conteudo" style="display: block;">
+
+        <!-- <section class="materia-secao bg-claro"> -->
+        <div class="grid-atividades-prix">
+            <div class="atividade-card">
+                <h2>Desafio BP Promotora</h2>
+
+                <div class="conteudo-lado-a-lado">
+
+                    <img class="analise-img" src="Fotos/rinha-print.png" alt="Imagem do Dashboard do Site">
+
+
+                    <div class="atividade-conteudo">
+                        <div class="habilidades-descricao">
+                            <h4>Competências e Habilidades:</h4>
+                            <p><b>H01: </b>Reconhecer requisitos de qualidade, integridade, usabilidade e segurança da
+                                informação; <b> H04: </b>Selecionar linguagem programação de acordo com os requisitos;
+                                <b> H06: </b>Aplicar linguagem de programação por meio de apis, bibliotecas, frameworks
+                                na construção de rotinas
+                                de software.
+                            </p>
+
+                            <h4>Descrição:</h4>
+                            <p>Esse desafio envolvia um sistema de finanças, onde você poderia colocar os seus dados na
+                                dashboard (como nº do cartão, data de vencimento, o valor, e etc) e realizar o
+                                pagamento, que fica salvo no histórico. Além disso poderia também fazer o restorno do
+                                pagamento. O desafio da BP Promotora foi uma experiência única e muito diferente. O
+                                desafio reuniu coisas que não havíamos trabalhado com facilidade antes, e conseguimos
+                                entender qual que deveria ser o diferencial em uma empresa (como a latência por
+                                exemplo). Foi uma
+                                atividade muito interessante e aprendemos muitos conceitos técnicos e como solucionar
+                                problemas, porém bem desafiadora por reunir conceitos diferentes do que vimos
+                                habitualmente e por ser uma proposta diferenciada paraa solução do problema, porém é uma
+                                ótima experiência paraa vida profissional. As linguagens de programação utilizadas foram
+                                JavaScript, React e Node.JS.
+                            </p>
+
+                            <a href="https://github.com/jjoaohartmann/RinhaSenai2026FullStack" target="_blank"
+                                rel="noopener noreferrer" class="btn-card">Link do repositório</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- </section> -->
+    </div>
+
+    <div id="trimestre3" class="aba-conteudo">
+        <div class="grid-atividades">
+            <div class="atividade-card">
+                <h2>Em andamento...</h2>
+
+                <p style="text-align: center; color: #000000;">Atividades do 3º Trimestre estarão disponíveis em breve.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="Contatos">
+        <h3>Contatos</h3>
+        <ul>
+            <li>m.eduardatezzari@gmail.com</li>
+            <li>(48) 98835-8833</li> <br>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maria-eduarda-tessari-6a8666365/" target="_blank"><img
+                        src="Fotos/LinkedIn.png" alt="LinkedIn"></a>
+
+                <a href="https://www.instagram.com/madutessari/" target="_blank"><img src="Fotos/Instagram.png"
+                        alt="Instagram"></a>
+
+                <a href="https://github.com/MariaTessari" target="_blank"><img src="Fotos/GitHub.png" alt="GitHub"></a>
+            </div>
+        </ul>
+        <p>&copy; 2026 Maria Eduarda Tessari. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
