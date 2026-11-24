@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -46,60 +46,68 @@
         <img src="Capas/atv_extra.png" alt="Capa de Atividades Extra" class="atividades">
     </div>
 
+    <div class="abas-container">
+        <button class="aba-btn ativo" onclick="abrirTrimestre(event, 'ic')">Iniciação Científica</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'certificados')">Certificados</button>
+
+    </div>
+
     <section class="capa">
+        <div id="ic" class="aba-conteudo" style="display: block;">
 
-        <div class="item-extra-row">
-            <div class="texto-bloco">
-                <h2>Iniciação Científica</h2>
-                <p>Participo da Iniciação Científica de Matemática na Escola Sesi desde 2025, uma jornada
-                    que tem me proporcionado experiências valiosas. Durante esse período, tive a
-                    oportunidade de participar de diversas feiras científicas, o que me permitiu expandir
-                    minha visão de mundo e trocar conhecimentos. Essa vivência aprimorou significativamente
-                    a minha oratória e me ajudou no desenvolvimento de habilidades essenciais, como a
-                    pesquisa metodológica, a escrita científica, a colaboração em equipe e a disciplina.
-                    Muito além de agregar para o meu futuro acadêmico e profissional, venho aprendendo na
-                    prática como aplicar o pensamento científico para desenvolver soluções inovadoras para
-                    problemas reais do nosso cotidiano.</p>
-            </div>
-            <div class="media-bloco">
-                <img src="Certificados/declaração-ic.png" alt="Certificado de Iniciação Científica"
-                    class="certificados">
-            </div>
-        </div>
-
-        <div class="item-extra-row">
-            <div class="media-bloco">
-                <div id="carrossel-ic" class="carrossel-container">
-                    <button class="seta seta-esq">&#10094;</button>
-
-                    <div class="carrossel-slides">
-                        <img src="Fotos/ic1.png" alt="Foto 1" class="slide">
-                        <img src="Fotos/ic2.jpg" alt="Foto 2" class="slide">
-                        <img src="Fotos/ic4.jpg" alt="Foto 3" class="slide">
-                        <img src="Fotos/ic5.jpg" alt="Foto 4" class="slide">
-                        <img src="Fotos/ic6.jpg" alt="Foto 5" class="slide">
-                        <img src="Fotos/ic7.jpeg" alt="Foto 6" class="slide">
-                        <img src="Fotos/ic8.jpeg" alt="Foto 7" class="slide">
-                        <img src="Fotos/ic9.jpeg" alt="Foto 8" class="slide">
-                        <img src="Fotos/ic10.jpg" alt="Foto 9" class="slide">
-                        <img src="Fotos/ic11.jpg" alt="Foto 10" class="slide">
-                        <img src="Fotos/ic12.jpg" alt="Foto 11" class="slide">
-                        <img src="Fotos/ic13.jpg" alt="Foto 12" class="slide">
-                        <img src="Fotos/ic14.jpg" alt="Foto 13" class="slide">
-                    </div>
-
-                    <button class="seta seta-dir">&#10095;</button>
+            <div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>Iniciação Científica</h2>
+                    <p>Participo da Iniciação Científica de Matemática na Escola Sesi desde 2025, uma jornada
+                        que tem me proporcionado experiências valiosas. Durante esse período, tive a
+                        oportunidade de participar de diversas feiras científicas, o que me permitiu expandir
+                        minha visão de mundo e trocar conhecimentos. Essa vivência aprimorou significativamente
+                        a minha oratória e me ajudou no desenvolvimento de habilidades essenciais, como a
+                        pesquisa metodológica, a escrita científica, a colaboração em equipe e a disciplina.
+                        Muito além de agregar para o meu futuro acadêmico e profissional, venho aprendendo na
+                        prática como aplicar o pensamento científico para desenvolver soluções inovadoras para
+                        problemas reais do nosso cotidiano.</p>
+                </div>
+                <div class="media-bloco">
+                    <img src="Certificados/declaração-ic.png" alt="Certificado de Iniciação Científica"
+                        class="certificados">
                 </div>
             </div>
-            <div class="texto-bloco">
-                <h2>Fotos IC</h2>
-                <p>Abaixo temos alguns registros de eventos e de projetos que fizemos na Iniciação Científica, como
-                    a FEBRACE, que aconteceu na USP, o Infomatrix onde ganhamos uma credencial, e outros eventos que
-                    contribuíram para o desenvolvimento do nosso projeto. Essas experiências foram fundamentais para
-                    o nosso amadurecimento acadêmico, permitindo que cada feedback recebido dos avaliadores fosse
-                    transformado em melhorias técnicas e teóricas. Mais do que meras participações, esses momentos
-                    documentam os desafios que enfrentamos, as soluções que criamos e o orgulho de ver nossa ideia
-                    ganhando forma e reconhecimento em cada nova etapa percorrida.</p>
+
+            <div class="item-extra-row">
+                <div class="media-bloco">
+                    <div id="carrossel-ic" class="carrossel-container">
+                        <button class="seta seta-esq">&#10094;</button>
+
+                        <div class="carrossel-slides">
+                            <img src="Fotos/ic1.png" alt="Foto 1" class="slide">
+                            <img src="Fotos/ic2.jpg" alt="Foto 2" class="slide">
+                            <img src="Fotos/ic4.jpg" alt="Foto 3" class="slide">
+                            <img src="Fotos/ic5.jpg" alt="Foto 4" class="slide">
+                            <img src="Fotos/ic6.jpg" alt="Foto 5" class="slide">
+                            <img src="Fotos/ic7.jpeg" alt="Foto 6" class="slide">
+                            <img src="Fotos/ic8.jpeg" alt="Foto 7" class="slide">
+                            <img src="Fotos/ic9.jpeg" alt="Foto 8" class="slide">
+                            <img src="Fotos/ic10.jpg" alt="Foto 9" class="slide">
+                            <img src="Fotos/ic11.jpg" alt="Foto 10" class="slide">
+                            <img src="Fotos/ic12.jpg" alt="Foto 11" class="slide">
+                            <img src="Fotos/ic13.jpg" alt="Foto 12" class="slide">
+                            <img src="Fotos/ic14.jpg" alt="Foto 13" class="slide">
+                        </div>
+
+                        <button class="seta seta-dir">&#10095;</button>
+                    </div>
+                </div>
+                <div class="texto-bloco">
+                    <h2>Fotos IC</h2>
+                    <p>Abaixo temos alguns registros de eventos e de projetos que fizemos na Iniciação Científica, como
+                        a FEBRACE, que aconteceu na USP, o Infomatrix onde ganhamos uma credencial, e outros eventos que
+                        contribuíram para o desenvolvimento do nosso projeto. Essas experiências foram fundamentais para
+                        o nosso amadurecimento acadêmico, permitindo que cada feedback recebido dos avaliadores fosse
+                        transformado em melhorias técnicas e teóricas. Mais do que meras participações, esses momentos
+                        documentam os desafios que enfrentamos, as soluções que criamos e o orgulho de ver nossa ideia
+                        ganhando forma e reconhecimento em cada nova etapa percorrida.</p>
+                </div>
             </div>
         </div>
 
@@ -107,125 +115,252 @@
         <hr>
         <br>
 
-        <div class="item-extra-row">
-            <div class="texto-bloco">
-                <h2>FEBRACE</h2>
-                <p>Uma das oportunidades que a Iniciação Científica me deu foi participar da 24ª Feira Brasileira de
-                    Ciências e Engenharia (FEBRACE) como finalista. Foi uma experiência incrível e transformadora,
-                    pois participar e conhecer uma feira tão grande como a FEBRACE me trouxe muitos ensinamentos que
-                    levarei tanto para a vida profissional quanto para a vida pessoal.</p>
-            </div>
-            <div class="media-bloco">
-                <img src="Certificados/certificado-febrace.png" alt="Certificado de FEBRACE" class="certificados">
-            </div>
-        </div>
 
-        <div class="item-extra-row">
-            <div class="media-bloco">
-                <img src="Certificados/certificado_ol.png" alt="Certificado de Olímpiada" class="certificados">
-            </div>
-            <div class="texto-bloco">
-                <h2>Olimpíada de Literatura - Madame Bovary</h2>
-                <p>Também tive o prazer de participar da Olimpíada de Literatura. Foi minha primeira vez
-                    participando e foi incrível, o livro da vez era “Madame Bovary”, uma leitura que eu considero um
-                    pouco mais difícil de ser entendida, porém mesmo assim foi maravilhoso participar e adorei a
-                    história da Madame Bovary. Além do certificado, também ganhei uma <b>medalha de ouro</b> pela
-                    participação.</p>
-            </div>
-        </div>
+<div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>Clube do Livro</h2>
+                    <p>Abaixo temos alguns registros de eventos e de projetos que fizemos na Iniciação Científica, como
+                        a FEBRACE, que aconteceu na USP, o Infomatrix onde ganhamos uma credencial, e outros eventos que
+                        contribuíram para o desenvolvimento do nosso projeto. Essas experiências foram fundamentais para
+                        o nosso amadurecimento acadêmico, permitindo que cada feedback recebido dos avaliadores fosse
+                        transformado em melhorias técnicas e teóricas. Mais do que meras participações, esses momentos
+                        documentam os desafios que enfrentamos, as soluções que criamos e o orgulho de ver nossa ideia
+                        ganhando forma e reconhecimento em cada nova etapa percorrida.</p>
+                </div>
+                <div class="media-bloco">
+                    <div id="carrossel-ic" class="carrossel-container">
+                        <button class="seta seta-esq">&#10094;</button>
 
-        <div class="item-extra-row">
-            <div class="texto-bloco">
-                <h2>Olimpíada de Literatura - Harry Potter</h2>
-                <p>Após participar pela primeira vez, resolvi participar de mais edições da Olimpíada de Literatura para
-                    ganhar mais experiência e conhecimento e trabalhar a interpretação ,
-                    dessa vez com a obra Harry Potter e a Pedra Filosofal, onde ganhei uma <b>medalha de bronze.</b></p>
-            </div>
-            <div class="media-bloco">
-                <img src="Certificados/cert-ol-1.png" alt="Certificado de Olimpiada" class="certificados">
-            </div>
-        </div>
+                        <div class="carrossel-slides">
+                            <img src="Fotos/ic1.png" alt="Foto 1" class="slide">
+                            <img src="Fotos/ic2.jpg" alt="Foto 2" class="slide">
+                            <img src="Fotos/ic4.jpg" alt="Foto 3" class="slide">
+                            <img src="Fotos/ic5.jpg" alt="Foto 4" class="slide">
+                            <img src="Fotos/ic6.jpg" alt="Foto 5" class="slide">
+                            <img src="Fotos/ic7.jpeg" alt="Foto 6" class="slide">
+                            <img src="Fotos/ic8.jpeg" alt="Foto 7" class="slide">
+                            <img src="Fotos/ic9.jpeg" alt="Foto 8" class="slide">
+                            <img src="Fotos/ic10.jpg" alt="Foto 9" class="slide">
+                            <img src="Fotos/ic11.jpg" alt="Foto 10" class="slide">
+                            <img src="Fotos/ic12.jpg" alt="Foto 11" class="slide">
+                            <img src="Fotos/ic13.jpg" alt="Foto 12" class="slide">
+                            <img src="Fotos/ic14.jpg" alt="Foto 13" class="slide">
+                        </div>
 
-        <div class="item-extra-row">
-            <div class="media-bloco">
-                <img src="Certificados/cert-ol-2.png" alt="Certificado de Olímpiada" class="certificados">
+                        <button class="seta seta-dir">&#10095;</button>
+                    </div>
+                </div>
             </div>
-            <div class="texto-bloco">
-                <h2>Olimpíada de Literatura - O Retrato de Dorian Gray</h2>
-                <p>Também participei da edição da Olimpíada com a obra "O Retrato de Dorian Gray", que foi mais
-                    desafiador pela sua leitura mais complicada, ainda assim fiquei feliz com meu rendimento e ganhei
-                    uma <b>medalha de bronze.</b></p>
-            </div>
-        </div>
 
-        <div class="item-extra-row">
-            <div class="texto-bloco">
-                <h2>Fundamentos de Lógica e Análise de Dados</h2>
-                <p>Obtive esse certificado de 27 horas de Fundamento de Lógica e Análise de Dados, com vários conteúdos
-                    trabalhados na área de desenvolvimento de sistemas. Nessas horas trabalhadas, foram desenvolvidos os
-                    projetos da BP Promotora, Hackathon e o Grand Prix SENAI. </p>
-            </div>
-            <div class="media-bloco">
-                <img src="Certificados/certificado-senai.png" alt="Certificado do SENAI" class="certificados">
-            </div>
-        </div>
+        
+        <div id="certificados" class="aba-conteudo" style="display: none;">
 
-        <div class="item-extra-row">
-            <div class="media-bloco">
-                <img src="Certificados/cert-levelone.png" alt="Certificado - Evento Level One" class="certificados">
+            <div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>FEBRACE</h2>
+                    <p>Uma das oportunidades que a Iniciação Científica me deu foi participar da 24ª Feira Brasileira de
+                        Ciências e Engenharia (FEBRACE) como finalista. Foi uma experiência incrível e transformadora,
+                        pois participar e conhecer uma feira tão grande como a FEBRACE me trouxe muitos ensinamentos que
+                        levarei tanto para a vida profissional quanto para a vida pessoal.</p>
+                </div>
+                <div class="media-bloco">
+                    <img src="Certificados/certificado-febrace.png" alt="Certificado de FEBRACE" class="certificados">
+                </div>
             </div>
-            <div class="texto-bloco">
-                <h2>Certificado - Level One</h2>
-                <p>O certificado ao lado refere-se ao evento Level One, que participamos dia 08/08, organizado pela Esag
-                    Jr, da UDESC. Esse foi um evento muito legal e interessante, que reuniu várias empresas
-                    (principalmente do ramo da tecnologia), para termos oportunidades de estágio, empregos e para que
-                    pudéssemos conhecer empresas e espalhar nossos currículos. Além disso, assistimos muitas palestras
-                    de pessoas importantes e com carreira profissional alavancada, o que foi ótimo para nos inspirarmos
-                    e percebermos como a perseverança, a disciplina e não desistir do que você acredita pode te levar
-                    longe. </p>
-            </div>
-        </div>
 
-        <div class="item-extra-row">
-            <div class="texto-bloco">
-                <h2>Olimpíada de Literatura - Percy Jackson e o Ladrão de Raios</h2>
-                <p>Também participei da edição da Olimpíada com a obra "Percy Jackson e o Ladrão de Raios", e apesar de
-                    ser um livro com mitologia grega e bem atual e conhecido pelos jovens, foi uma leitura um pouco mais
-                    difícil pra mim por ser um universo bem elaborado e uma escrita mais difícil de me prender na
-                    história, após a prova acabei conquistando uma <b>medalha de prata.</b></p>
+            <div class="item-extra-row">
+                <div class="media-bloco">
+                    <img src="Certificados/certificado_ol.png" alt="Certificado de Olímpiada" class="certificados">
+                </div>
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Madame Bovary</h2>
+                    <p>Também tive o prazer de participar da Olimpíada de Literatura. Foi minha primeira vez
+                        participando e foi incrível, o livro da vez era “Madame Bovary”, uma leitura que eu considero um
+                        pouco mais difícil de ser entendida, porém mesmo assim foi maravilhoso participar e adorei a
+                        história da Madame Bovary. Além do certificado, também ganhei uma <b>medalha de ouro</b> pela
+                        participação.</p>
+                </div>
             </div>
-            <div class="media-bloco">
-                <img src="Certificados/cert-olimpiada-percy.png" alt="Certificado do Percy Jackson"
-                    class="certificados">
-            </div>
-        </div>
 
-        <div class="item-extra-row">
-            <div class="media-bloco">
-                <img src="Certificados/cert-olimpiada-filmes.png" alt="Certificado - Aventuras, olimpíada"
-                    class="certificados">
+            <div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Harry Potter</h2>
+                    <p>Após participar pela primeira vez, resolvi participar de mais edições da Olimpíada de Literatura
+                        para
+                        ganhar mais experiência e conhecimento e trabalhar a interpretação ,
+                        dessa vez com a obra Harry Potter e a Pedra Filosofal, onde ganhei uma <b>medalha de bronze.</b>
+                    </p>
+                </div>
+                <div class="media-bloco">
+                    <img src="Certificados/cert-ol-1.png" alt="Certificado de Olimpiada" class="certificados">
+                </div>
             </div>
-            <div class="texto-bloco">
-                <h2>Olimpíada de Literatura - Cinema 12: Aventuras Extraordinárias</h2>
-                <p>Ao participar de mais uma olimpíada de literatura, acabei escolhendo uma prova que envolvia três
-                    filmes: Jurassic Park, Jumanji e Uma Noite no Museu. Foi bem interessante essa nova experiência de
-                    fazer uma prova interpretativa sobre os filmes, e acabei conquistando uma <b>medalha de menção
-                        honrosa.</b></p>
-            </div>
-        </div>
 
-        <div class="item-extra-row">
-            <div class="texto-bloco">
-                <h2>Certificado - FEBIC </h2>
-                <p>Em setembro de 2026, participei da Feira Brasileira de Iniciação Científica em Joinville, na qual
-                    obtive o certificado ao lado com a minha participação. Foi uma experiência incrível, conhecendo
-                    diversos projetos interessantes, problemas da sociedade e pessoas de diversos lugares do mundo. Além
-                    disso, a apresentação do meu projeto resultou a premiação de <b>2º lugar + Credencial para a
-                        Argentina.</b></p>
+            <div class="item-extra-row">
+                <div class="media-bloco">
+                    <img src="Certificados/cert-ol-2.png" alt="Certificado de Olímpiada" class="certificados">
+                </div>
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - O Retrato de Dorian Gray</h2>
+                    <p>Também participei da edição da Olimpíada com a obra "O Retrato de Dorian Gray", que foi mais
+                        desafiador pela sua leitura mais complicada, ainda assim fiquei feliz com meu rendimento e
+                        ganhei
+                        uma <b>medalha de bronze.</b></p>
+                </div>
             </div>
-            <div class="media-bloco">
-                <img src="Certificados/cert-febic.png" alt="Certificado da FEBIC"
-                    class="certificados">
+
+            <div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>Fundamentos de Lógica e Análise de Dados</h2>
+                    <p>Obtive esse certificado de 27 horas de Fundamento de Lógica e Análise de Dados, com vários
+                        conteúdos
+                        trabalhados na área de desenvolvimento de sistemas. Nessas horas trabalhadas, foram
+                        desenvolvidos os
+                        projetos da BP Promotora, Hackathon e o Grand Prix SENAI. </p>
+                </div>
+                <div class="media-bloco">
+                    <img src="Certificados/certificado-senai.png" alt="Certificado do SENAI" class="certificados">
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="media-bloco">
+                    <img src="Certificados/cert-levelone.png" alt="Certificado - Evento Level One" class="certificados">
+                </div>
+                <div class="texto-bloco">
+                    <h2>Certificado - Level One</h2>
+                    <p>O certificado ao lado refere-se ao evento Level One, que participamos dia 08/08, organizado pela
+                        Esag
+                        Jr, da UDESC. Esse foi um evento muito legal e interessante, que reuniu várias empresas
+                        (principalmente do ramo da tecnologia), para termos oportunidades de estágio, empregos e para
+                        que
+                        pudéssemos conhecer empresas e espalhar nossos currículos. Além disso, assistimos muitas
+                        palestras
+                        de pessoas importantes e com carreira profissional alavancada, o que foi ótimo para nos
+                        inspirarmos
+                        e percebermos como a perseverança, a disciplina e não desistir do que você acredita pode te
+                        levar
+                        longe. </p>
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Percy Jackson e o Ladrão de Raios</h2>
+                    <p>Também participei da edição da Olimpíada com a obra "Percy Jackson e o Ladrão de Raios", e apesar
+                        de
+                        ser um livro com mitologia grega e bem atual e conhecido pelos jovens, foi uma leitura um pouco
+                        mais
+                        difícil pra mim por ser um universo bem elaborado e uma escrita mais difícil de me prender na
+                        história, após a prova acabei conquistando uma <b>medalha de prata.</b></p>
+                </div>
+                <div class="media-bloco">
+                    <img src="Certificados/cert-olimpiada-percy.png" alt="Certificado do Percy Jackson"
+                        class="certificados">
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="media-bloco">
+                    <img src="Certificados/cert-olimpiada-filmes.png" alt="Certificado - Aventuras, olimpíada"
+                        class="certificados">
+                </div>
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Cinema 12: Aventuras Extraordinárias</h2>
+                    <p>Ao participar de mais uma olimpíada de literatura, acabei escolhendo uma prova que envolvia três
+                        filmes: Jurassic Park, Jumanji e Uma Noite no Museu. Foi bem interessante essa nova experiência
+                        de
+                        fazer uma prova interpretativa sobre os filmes, e acabei conquistando uma <b>medalha de menção
+                            honrosa.</b></p>
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>Certificado - FEBIC </h2>
+                    <p>Em setembro de 2026, participei da Feira Brasileira de Iniciação Científica em Joinville, na qual
+                        obtive o certificado ao lado com a minha participação. Foi uma experiência incrível, conhecendo
+                        diversos projetos interessantes, problemas da sociedade e pessoas de diversos lugares do mundo.
+                        Além
+                        disso, a apresentação do meu projeto resultou a premiação de <b>2º lugar + Credencial para a
+                            Argentina.</b></p>
+                </div>
+                <div class="media-bloco">
+                    <img src="Certificados/cert-febic.png" alt="Certificado da FEBIC" class="certificados">
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="media-bloco">
+                    <img src="Certificados/cert-hp3.png" alt="Certificado - Harry Potter e o Prisioneiro de Azkaban"
+                        class="certificados">
+                </div>
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Harry Potter e o Prisioneiro de Azkaban</h2>
+                    <p>Em novembro participei de mais uma leva de olimpíadas de literatura, apesar de não ter feito
+                        muitas
+                        por conta dos estudos do ENEM e vestibular. Esse em questão eu fiz sobre o livro de Harry Potter
+                        e o
+                        Prisioneiro de Azkaban, que é um dos meus favoritos, em que gabaritei a prova e obtive uma
+                        <b>medalha de ouro.</b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Cinema 14: Harry Potter </h2>
+                    <p>Ainda em novembro participei da olimpíada sobre os 3 primeiros filmes de Harry Potter, em que eu
+                        também gabaritei a prova e obtive uma <b>medalha de ouro.</b> Foi muito interessante fazer sobre
+                        o
+                        livro
+                        e logo em seguida sobre os filmes.</p>
+                </div>
+                <div class="media-bloco">
+                    <img src="Certificados/cert-cinema.png" alt="Certificado - Filme" class="certificados">
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="media-bloco">
+                    <img src="Certificados/cert-cinema1.png" alt="Certificado - Romance" class="certificados">
+                </div>
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Cinema 15: Romance</h2>
+                    <p>Dessa vez participei de mais uma categoria de cinema, o Cinema 15: Romance, que abrangia os
+                        filmes:
+                        Titanic, Orgulho e Preconceito e O Curioso Caso de Benjamin Button. Foi muito interessante
+                        expandir
+                        a interpretação das obras, e obtive uma <b>medalha de prata</b> com a minha participação.</p>
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Razão e Sensibilidade</h2>
+                    <p>Também participei da prova sobre o livro Razão e Sensibilidade da Jane Austen, e obtive uma
+                        <b>medalha de bronze.</b> Foi uma leitura um pouco mais complicada, pela linguagem mais formal e
+                        antiga, porém foi muito bom e produtivo, além de expandir o vocabulário.
+                    </p>
+                </div>
+                <div class="media-bloco">
+                    <img src="Certificados/cert-razao.png" alt="Certificado - Razão e Sensibilidade"
+                        class="certificados">
+                </div>
+            </div>
+
+            <div class="item-extra-row">
+                <div class="media-bloco">
+                    <img src="Certificados/cert-cinema1.png" alt="Certificado - Romance" class="certificados">
+                </div>
+                <div class="texto-bloco">
+                    <h2>Olimpíada de Literatura - Jogos Vorazes</h2>
+                    <p>Uma das obras que mais gosto e acho que envelhece muito bem é Jogos Vorazes, e dessa vez
+                        participei
+                        da prova sobre esse livro e foi uma experiência muito boa. Obtive uma <b>medalha de prata</b>
+                        com a
+                        minha participação.</p>
+                </div>
             </div>
         </div>
 
