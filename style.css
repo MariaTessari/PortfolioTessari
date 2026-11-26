@@ -891,6 +891,11 @@ footer ul li a:hover {
    8. Pagina Atividades Extra (MODIFICADA CONFORME SOLICITADO)
    ========================================================================== */
 
+.conteudo-extra {
+    max-width: 1100px;      /* mesma largura da area branca das materias */
+    margin: 20px auto;      /* centraliza a area branca na pagina */
+}
+
 .item-extra-row {
     display: flex;
     flex-direction: row;
